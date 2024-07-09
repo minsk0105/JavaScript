@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+li {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  position: relative;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-center {
+  overflow: hidden;
+  /* position: relative; */
+}
+
+.nav-header {
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+}
+
+.logo {
+  position: absolute;
+  top: 0;left: 0;
+  width: 250px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 35px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.logo span {
+  color: skyblue;
+}
+
+.nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 130px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-toggle > i {
+  color: skyblue;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.tog {
+  transform: rotate(90deg);
+}
+
+.links {
+  font-size: 25px;
+  background-color: white;
+  height: 0;
+}
+
+.show-links {
+  height: 240px;
+}
+
+.links > li {
+  width: 100%;
+  height: 60px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.links > li > a {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-center {
+    max-width: 1370px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+
+  .links > li:hover {
+    color: skyblue;
+  }
+}
+
+@media screen and (max-width:1000px) {
+
+  .links > li:hover {
+    background-color: rgb(191, 237, 255);
+    padding-left: 40px;
+    color: skyblue;
+  }
+}
