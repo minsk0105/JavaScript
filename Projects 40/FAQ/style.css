@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+
+.questions {
+  width: 500px;
+  height: 600px;
+  /* background-color: white; */
+}
+
+.title {
+  text-align: center;
+  line-height: 100px;
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: orange;
+}
+
+.question {
+  position: relative;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 20px;
+  margin-top: 25px;
+}
+
+.question-title > p {
+  display: inline-block;
+  font-size: 18px;
+  font-family: sans-serif;
+  padding: 2px;
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.question-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: inherit;
+  border: none;
+}
+
+.question-btn span {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  font-size: 25px;
+  color: orange;
+}
+
+.question-btn span i {
+  cursor: pointer;
+}
+
+.question-text {
+  border-top: 1px solid rgb(189, 189, 189);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.minus-icon, .question-text {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+}
+
+.open-icon {
+  display: block;
+}
