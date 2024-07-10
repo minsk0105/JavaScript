@@ -75,14 +75,15 @@ body {
   padding-top: 20px;
 }
 
-.minus-icon, .question-text {
+.minus-icon, .question-text,
+.open-icon .plus-icon {
   display: none;
 }
 
-.close-icon {
-  display: none;
+.open-icon .minus-icon {
+  display: block;
 }
 
-.open-icon {
+.open-icon .question-text {
   display: block;
 }

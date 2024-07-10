@@ -1,8 +1,28 @@
 const btns = document.querySelectorAll('.question-btn');
-const loremText = document.querySelectorAll('.question-text');
+const questions = document.querySelectorAll('.question');
 
-btns.forEach(function(btn) {
-  btn.addEventListener('click', function(event) {
-    console.log(event.currentTarget);
+questions.forEach(function(question) {
+  const btn = question.querySelector('.question-btn');
+  // console.log(btn);
+  btn.addEventListener('click', function() {
+    // console.log(question);
+    questions.forEach(function(item) {
+      // console.log(item);
+      if(item != question) {
+        item.classList.remove("open-icon");
+      }
+      question.classList.toggle("open-icon");
+
+      // console.log(question);
+      console.log(item);
+    });
   });
 });
+
+// btns.forEach(function(btn) {
+//   btn.addEventListener('click', function(a) {
+//     const question = a.currentTarget.parentElement.parentElement;
+
+//     question.classList.toggle("open-icon");
+//   });
+// });
