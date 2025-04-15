@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container > h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+#value {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.btn_container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 5px 20px;
+    margin: 0 10px;
+    border: 2px solid #222;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #222;
+    color: #eee;
+}
