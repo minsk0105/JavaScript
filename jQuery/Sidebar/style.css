@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+li {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#bar {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    display: flex;
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    background-color: inherit;
+}
+
+#bar i {
+    color: rgb(153, 192, 205);
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.show {
+    transform: translateX(0);
+}
+
+.side_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    padding: 0 40px;
+}
+
+.side_top h2 {
+    font-weight: 400;
+    text-transform: capitalize;
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.side_top h2 span {
+    color: rgb(153, 192, 205);
+}
+
+#close {
+    font-size: 30px;
+    display: flex;
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+}
+
+#close i {color: rgb(226, 0, 0);}
+
+nav {
+    margin-top: 40px;
+    width: 100%;
+}
+
+nav a {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 40px;
+    transition: .3s ease-out;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: rgba(173, 216, 230, 0.400);
+    color: rgb(112, 184, 208);
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+        width: 100%;
+    }
+}

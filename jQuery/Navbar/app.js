@@ -11,6 +11,6 @@
 $('#bar'). on ('click', () => {
     if ($('nav > ul').hasClass('mobile')) {
         // addClass, removeClass, toggleClass
-        $('header').toggleClass("show");
+        $('header').toggleClass('show');
     }
 });
