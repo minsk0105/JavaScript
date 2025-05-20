@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function sayHello(name, callback) {
+            const words = '안녕하세요 내 이름은 ' + name + ' 입니다.';
+
+            callback(words); // 매개변수의 함수(콜백 함수) 호출
+        };
+
+        sayHello('바보', function printing(name) {
+            console.log(name);
+        });
+        // 콜백 함수는 파라미터로 일반적인 변수나 값을 전달하는 것이 아닌 함수 자체를 전달
+
+        // 화살표 함수의 콜백
+        function sayHello2(callback) {
+            var name = 'James';
+            callback(name);
+        };
+
+        sayHello2((name) => {
+            console.log("Hello, " + name);
+        });
+
+        // 콜백 함수를 별도의 함수로 정의
+        function greet(name) {
+            console.log("Great, " + name);
+        };
+
+        function first(callback) {
+            var name = 'John';
+            callback(name);
+        };
+
+        function second(callback) {
+            var name = 'Jackson';
+            callback(name);
+        };
+
+        first(greet);
+        second(greet);
+
+    </script>
+</body>
+</html>
